@@ -1,12 +1,16 @@
 name: CI
 
-on: 
+on:
+  push:
+    branches-ignore:
+      - main
+      
   pull_request:
   workflow_dispatch:
 
 
 jobs:
-  test:
+  jobnum1:
     runs-on: ubuntu-latest
 
     steps:
