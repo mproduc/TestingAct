@@ -42,4 +42,4 @@ jobs:
       - name: SAST simulation
         run: |
           echo "Checking for vulnerabilities..."
-          exit 0   # fail this with exit 1
+          exit 1   # fail this with exit 1
